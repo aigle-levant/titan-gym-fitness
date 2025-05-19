@@ -1,0 +1,31 @@
+@import '_variables.scss';
+
+// flex
+@mixin flex-direction($dir) {
+    display: flex;
+    flex-direction: $dir;
+}
+// position
+@mixin position($dir) {
+    position: $dir;
+}
+// transition
+@mixin transition($element: all, $duration: 1s, $timing-funct: ease) {
+    transition: $element $duration $timing-funct;
+}
+// center
+@mixin center-flex {
+    justify-content: center;
+    align-items: center;
+}
+// responsive design
+@mixin clamped-text ($min, $max) {
+    font-size: clamp(#{$min}, 2.5vw, #{$max});
+} @mixin media($key) {
+    $value: map-get($breakpoints, $key);
+    @if $breakpoint == $value {
+        @media (min-width: $value) {
+            @content;
+        }
+    }
+}
