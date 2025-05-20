@@ -8,7 +8,7 @@ export default function Navbar() {
             <div className="nav-bar--logo-wrapper">
                 <img src="../assets/icons/helmet.png" alt="." className="nav-bar--logo"/>
             </div>
-            <div className="nav-bar--links-wrapper">
+            <div className="nav-bar--links-wrapper small">
                 <ul>
                     <li className='links-wrapper--list-item'>
                         <NavLink to="/about">About</NavLink>

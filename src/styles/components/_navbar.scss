@@ -1,0 +1,11 @@
+@import '../base/_variables.scss';
+@import '../base/typography.scss';
+@import '../base/mixins.scss';
+
+#navbar {
+    background-color: $white;
+    color: $black;
+    @include flex-direction(row);
+    
+}
+

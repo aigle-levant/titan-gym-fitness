@@ -1,5 +1,5 @@
 // images
-import heroOne from '../../assets/img/hero-1';
+import heroOne from '../../assets/img/hero-1.jpg';
 import heroTwo from '../../assets/img/hero-2';
 import heroThree from '../../assets/img/hero-3';
 // components
