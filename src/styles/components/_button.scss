@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use '../base/typography' as *;
+
+.services-btn {
+    background-color: $primary-red;
+    color: $white;
+    padding: 0.7rem 1.5rem;
+    @include transition(all, 0.3s, ease);
+    border: none;
+    &:hover {
+        background-color:rgba($color: $primary-red, $alpha: 0.3);
+        color: $black;
+    }
+}

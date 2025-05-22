@@ -5,15 +5,15 @@ import { NavLink } from 'react-router';
 export default function Footer() {
     return (
         <footer id='footer' className='flex'>
-            <div className='footer-links'>
+            <div className='links'>
                 <ul>
-                    <li className='footer-links--list-item'>
+                    <li className='footer-list-item'>
                         <NavLink to="/about">About</NavLink>
                     </li>
-                    <li className='footer-links--list-item'>
+                    <li className='footer-list-item'>
                         <NavLink to="/services">Services</NavLink>
                     </li>
-                    <li className='footer-links--list-item'>
+                    <li className='footer-list-item'>
                         <NavLink to="/contact-us">Contact Us</NavLink>
                     </li>
                 </ul>

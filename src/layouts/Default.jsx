@@ -1,7 +1,9 @@
+// libraries
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 // components
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Outlet } from 'react-router';
 
 export default function Default() {
     return (

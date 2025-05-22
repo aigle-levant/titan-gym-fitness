@@ -1,11 +1,32 @@
-@import '../base/_variables.scss';
-@import '../base/typography.scss';
-@import '../base/mixins.scss';
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
 
-#navbar {
+#nav-bar {
     background-color: $white;
     color: $black;
+    width: 100vw;
+    padding: 0.5rem 1rem;
     @include flex-direction(row);
-    
+    justify-content: space-between;
+    align-items: center;
+    .logo, .dark-mode-img {
+        @include max-dim(50px, 50px);
+    } .links-wrapper>ul {
+        list-style: none;
+        @include flex-direction(row);
+        justify-content: space-between;
+        align-items: center;
+    } .btn {
+        border: none;
+        background-color: $white;
+    } .links-wrapper, .links-wrapper>ul {
+        gap: 5rem;
+        a {
+            padding: 0.5rem 1rem;
+            @include transition(all, 0.3s, ease);
+            &:hover {
+                background-color: rgba($color: $black, $alpha: 0.2);
+            }   
+        }
+    }
 }
-

@@ -1,9 +1,26 @@
-@import 'base/variables';
-@import 'base/typography';
-@import 'base/mixins';
+// base
+@use 'base/mixins' as *;
+@use 'base/typography' as *;
+@use 'base/variables' as *;
 
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/not-found';
-@import 'pages/services';
-@import 'pages/contact';
+// components
+@use 'components/button';
+@use 'components/card';
+@use 'components/footer';
+@use 'components/navbar';
+@use 'components/hero-section';
+@use 'components/testimonials';
+@use 'components/contact-form';
+
+// layouts
+@use 'layouts/default';
+
+// pages
+@use 'pages/about';
+@use 'pages/home';
+@use 'pages/contact';
+@use 'pages/not-found';
+@use 'pages/services';
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');

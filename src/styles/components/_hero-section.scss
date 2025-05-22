@@ -1,0 +1,51 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use '../base/typography' as *;
+@use './button';
+
+#hero {
+    padding: 5rem 1rem;
+    margin: 1rem 2.5rem;
+    @include flex-direction(row);
+    @include center-flex;
+    .text-content {
+        * {
+            margin: 0.5rem 0;
+        }
+    }
+    .img-content {
+        margin: 0 3rem;
+        @include flex-direction(row);
+        @include center-flex;
+        .img-content-left {
+            img {
+            min-height: 400px;
+            max-width: 300px;
+            }
+        }
+        .img-content-right {
+            @include flex-direction(column);
+            img {
+                min-height: 400px;
+                max-width: 350px;
+            }
+        }
+    } 
+}
+
+@media (max-width: $md) {
+    #hero {
+        @include flex-direction(column);
+        .text-content {
+            margin-bottom: 2rem;
+        } .img-content {
+            .img-content-right {
+                max-width: 305px;
+                min-height: 270px;
+            } .img-content-left {
+                max-width: 300px;
+                min-height: 360px;
+            }
+        }
+    }
+}

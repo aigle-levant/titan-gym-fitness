@@ -4,7 +4,7 @@ $white: #FFF8F0;
 $primary-red: #A30B37;
 $secondary-blue: #111D4A;
 $accent-teal: #1F7A8C;
-
+$md: 768px;
 // responsive design
 $breakpoints: (
   sm: 480px,
@@ -12,3 +12,16 @@ $breakpoints: (
   lg: 1024px,
   xl: 1280px
 );
+
+// reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// links
+a, a:visited, a:focus, a:hover {
+  text-decoration: none;
+  color: $black;
+}
