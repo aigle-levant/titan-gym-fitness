@@ -20,14 +20,14 @@
         .img-content-left {
             img {
             min-height: 400px;
-            max-width: 300px;
+            max-width: 330px;
             }
         }
         .img-content-right {
             @include flex-direction(column);
             img {
                 min-height: 400px;
-                max-width: 350px;
+                max-width: 340px;
             }
         }
     } 

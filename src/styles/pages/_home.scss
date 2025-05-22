@@ -1,0 +1,8 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use '../base/typography' as *;
+
+:root {
+    background-color: $white;
+    color: $black;
+}
