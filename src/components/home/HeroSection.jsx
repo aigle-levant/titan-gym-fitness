@@ -1,5 +1,3 @@
-// libraries
-import React from "react";
 // images
 import heroOne from '../../assets/img/hero-1.jpg';
 import heroTwo from '../../assets/img/hero-2.jpg';

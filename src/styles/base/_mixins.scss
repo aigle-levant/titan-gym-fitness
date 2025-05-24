@@ -37,3 +37,19 @@
     min-width: $width;
     min-height: $height;
 }
+// grid
+@mixin grid($rows: null, $columns: null, $gap: null, $row-gap: null, $column-gap: null) {
+  display: grid;
+  gap: $gap;
+  row-gap: $row-gap;
+  column-gap: $column-gap;
+  grid-template-rows: $rows;
+  grid-template-columns: $columns;
+}
+// grid start
+@mixin grid-pos($row-start: null, $row-end: null, $col-start: null, $col-end: null) {
+    grid-row-start: $row-start;
+    grid-row-end: $row-end;
+    grid-column-start: $col-start;
+    grid-column-end: $col-end;
+}

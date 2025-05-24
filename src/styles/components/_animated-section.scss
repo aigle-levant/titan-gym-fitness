@@ -1,0 +1,33 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use '../base/typography' as *;
+
+#quote {
+    padding: 1rem 5rem;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    .margin-need, .small:first-child {
+        margin-top: 1rem;
+    }
+}
+
+#animated-section {
+    margin: 1rem;
+    @include grid(repeat(1, 1fr), repeat(4, 1fr));
+    .animated-section--text-content {
+        @include grid-pos(1, null, 2,5);
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    .video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } .animated-section--video {
+        width: 600px;
+        height: 400px;
+        position: relative;
+        @include grid-pos(null, null, 1,3);
+    }
+}
