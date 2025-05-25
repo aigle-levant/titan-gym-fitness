@@ -4,6 +4,7 @@ import React from "react";
 import HeroSection from "../components/home/HeroSection.jsx";
 import Quote from '../components/home/Quote.jsx';
 import AnimatedSection from "../components/home/AnimatedSection.jsx";
+import TrainersList from "../components/home/TrainersList.jsx";
 
 export default function Home () {
     return (
@@ -11,6 +12,7 @@ export default function Home () {
             <HeroSection/>
             <Quote/>
             <AnimatedSection/>
+            <TrainersList/>
         </div>
     )
 }

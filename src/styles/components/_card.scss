@@ -1,0 +1,24 @@
+@use '../base/mixins' as *;
+@use '../base/typography' as *;
+@use '../base/variables' as *;
+
+.trainer-img-wrapper {
+        max-width: 1000px;
+        max-height: 600px;
+        @include flex-direction(row);
+        place-items: center;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+} .pill {
+    background-color: $primary-red;
+    color: $white;
+    border-radius: 10px;
+    padding: 0.2rem;
+    margin-top: 0.6rem;
+} .trainer-name {
+    margin: 1rem 0;
+}

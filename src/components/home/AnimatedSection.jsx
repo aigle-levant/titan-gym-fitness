@@ -1,3 +1,5 @@
+// libraries
+import { motion } from 'framer-motion';
 // components
 import AnimatedVideo from './AnimatedVideo.jsx';
 // styles
@@ -6,7 +8,9 @@ import '../../styles/components/_animated-section.scss';
 export default function AnimatedSection() {
     return (
         <>
-            <div id="animated-section">
+            <motion.div id="animated-section"
+                initial={{ x: -50, y:0 }}
+                animate={{ x: 50, y:0 }}>
 
                 <div className="animated-section--text-content">
                     <h2 className="big">Train like a Spartan</h2>
@@ -15,10 +19,9 @@ export default function AnimatedSection() {
                         It has roots in a piece of classical Latin literature from 45 BC
                     </p>
                 </div>
-
-                <div className="animated-section--video-content">
+            </motion.div>
+            <div className="animated-section--video-content">
                     <AnimatedVideo/>
-                </div>
             </div>
         </>
     )
