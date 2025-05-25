@@ -24,5 +24,17 @@ export function TrainerCard({ trainerImg, trainerName, trainerDept }) {
                 </div>
             </div>
         </div>
+    );
+}
+
+export function SubscriptionCard({ tier, benefits }) {
+    return (
+        <div className='subscription-card'>
+            <h3 className='big'>{tier}</h3>
+            <ul>
+                <li className='list'>{benefits}</li>
+            </ul>
+            <button type='submit' className='btn subscribe-btn'>Subscribe</button>
+        </div>
     )
 }
