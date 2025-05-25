@@ -1,0 +1,30 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+@use '../base/typography' as *;
+
+#subscription-model {
+    margin: 2rem 1rem;
+    text-align: center;
+    .big {
+        margin: 1rem 0;
+    }
+    .subscription-wrapper {
+        @include flex-direction(row);
+
+        .subscription-card {
+            &.basic {
+                background-color: rgba($color: $black, $alpha: 0.7);
+            } &.pro {
+                background-color: $primary-red;
+                color: $white;
+            } ul {
+                list-style: none;
+            } .subscribe-btn {
+                background-color: $white;
+                color: $black;
+                padding: 0.5rem 1rem;
+                border: none;
+            }
+        }
+    }
+}

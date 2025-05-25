@@ -27,13 +27,18 @@ export function TrainerCard({ trainerImg, trainerName, trainerDept }) {
     );
 }
 
-export function SubscriptionCard({ tier, benefits }) {
+export function SubscriptionCard({ tier, benefits, price, subClass }) {
     return (
-        <div className='subscription-card'>
+        <div className={`subscription-card ${subClass}`}>
             <h3 className='big'>{tier}</h3>
             <ul>
-                <li className='list'>{benefits}</li>
+                {benefits.map((benefit, i) => (
+                    <li key={i}>{benefit}</li>
+                ))}
             </ul>
+            <p className='medium'>
+                Starting at {price}
+            </p>
             <button type='submit' className='btn subscribe-btn'>Subscribe</button>
         </div>
     )
