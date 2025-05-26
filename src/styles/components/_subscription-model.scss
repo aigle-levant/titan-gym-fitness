@@ -3,27 +3,35 @@
 @use '../base/typography' as *;
 
 #subscription-model {
-    margin: 2rem 1rem;
-    text-align: center;
+    @include grid(repeat(8, 3rem), repeat(5, 1fr));
     .big {
-        margin: 1rem 0;
-    }
-    .subscription-wrapper {
+        font-weight: 400;
+        @include grid-pos(null, null, 3,5);
+    } .subscription-cards {
         @include flex-direction(row);
-
+        @include grid-pos(null, null,1,4);
+        margin: 0 2rem;
         .subscription-card {
-            &.basic {
-                background-color: rgba($color: $black, $alpha: 0.7);
-            } &.pro {
-                background-color: $primary-red;
-                color: $white;
-            } ul {
+            padding: 1rem;
+            ul {
                 list-style: none;
-            } .subscribe-btn {
-                background-color: $white;
-                color: $black;
-                padding: 0.5rem 1rem;
-                border: none;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    #subscription-model {
+        margin-bottom: 10rem;
+        .big {
+            @include grid-pos(null, null, 2,6);
+        } .subscription-cards {
+            @include flex-direction(column);
+            .subscription-card {
+                @include flex-direction(row);
+                .basic {
+                    @include grid-pos(2,4,2,5);
+                }
             }
         }
     }

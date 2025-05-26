@@ -41,16 +41,17 @@ export default function SubscriptionList() {
     return (
         <div id="subscription-model">
             <h2 className='big'>Join the club</h2>
-            <div className='subscription-wrapper'>
-                {subscriptions.map((subs, i) => (
+            <div className='subscription-cards'>
+                {subscriptions.map(
+                    (card, i) => (
                     <SubscriptionCard
                         key={i}
-                        tier={subs.tier}
-                        benefits={subs.benefits}
-                        price={subs.price}
-                        className={subs.subClass}
-                    />
-                ))}
+                        tier={card.tier}
+                        benefits={card.benefits}
+                        price={card.price}
+                        subClass={card.subClass}
+                    />)
+                )}
             </div>
         </div>
     )
