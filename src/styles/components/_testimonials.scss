@@ -1,0 +1,30 @@
+@use '../base/mixins' as *;
+@use '../base/typography' as *;
+@use '../base/variables' as *;
+
+#testimonials {
+    margin: 1rem;
+    .big {
+        text-align: center;
+    } .testimonials-wrapper {
+        @include flex-direction(column);
+        .top-wrapper>.testimonial-card,
+        .bottom-wrapper>.testimonial-card {
+            background-color: $black;
+            color: $white;
+            margin: 1rem;
+            padding: 1rem;
+            @include transition(all, 0.3s, ease);
+        } .top-wrapper, .bottom-wrapper {
+            @include flex-direction(row);
+            .testimonial-card>.small {
+                margin: 1rem 0;
+            } .testimonial-card>.name {
+                font-weight: 600;
+            }
+        }
+        .testimonial-card:hover {
+            background-color: $primary-red;
+        }
+    }
+}

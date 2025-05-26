@@ -45,3 +45,12 @@ export function SubscriptionCard({ tier, benefits, price, subClass }) {
         </div>
     )
 }
+
+export function TestimonialCard({ testimonialDesc, testimonialName }) {
+    return (
+        <div className='testimonial-card'>
+            <p className='small'>"{testimonialDesc}"</p>
+            <span className='small name'>{testimonialName}</span>
+        </div>
+    );
+}
