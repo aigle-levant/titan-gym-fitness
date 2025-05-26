@@ -40,7 +40,7 @@ export function SubscriptionCard({ tier, benefits, price, subClass }) {
             </div>
             <div className='price-tag'>
                 <p className='medium'>Starting at {price}</p>
-                <button type='submit' className='btn subscribe-btn'>Subscribe</button>
+                <button type='submit' className='small btn subscribe-btn'>Subscribe</button>
             </div>
         </div>
     )
