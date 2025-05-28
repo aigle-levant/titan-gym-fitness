@@ -13,7 +13,7 @@ export default function SubscriptionList() {
                 "Includes group classes (yoga, HIIT, etc.)",
                 "Locker access"
             ],
-            price: "₹999 / month",
+            price: "$19.99 / month",
             subClass: "basic"
         },
         {
@@ -24,7 +24,7 @@ export default function SubscriptionList() {
                 "Access to premium amenities (sauna, spa, body analysis)",
                 "Free guest passes"
             ],
-            price: "₹1316 / month",
+            price: "$39.99 / month",
             subClass: "pro"
         },
         {
@@ -35,7 +35,7 @@ export default function SubscriptionList() {
                 "Nutritionist consultation",
                 "Exclusive events/workshops"
             ],
-            price: "₹1899 / month",
+            price: "$199.99 / month",
             subClass: "elite"
         }
     ]
