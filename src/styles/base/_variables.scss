@@ -6,7 +6,7 @@ $secondary-blue: #111D4A;
 $accent-teal: #1F7A8C;
 $md: 768px;
 $sm: 480px;
-
+$lg: 1000px;
 // reset
 * {
     margin: 0;
@@ -23,4 +23,6 @@ a, a:visited, a:focus, a:hover {
 // show / hide
 .hide {
   display: none;
+} .show {
+  display: block;
 }
