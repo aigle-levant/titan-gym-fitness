@@ -26,3 +26,7 @@ a, a:visited, a:focus, a:hover {
 } .show {
   display: block;
 }
+
+html, body {
+  overflow-x: hidden;
+}
