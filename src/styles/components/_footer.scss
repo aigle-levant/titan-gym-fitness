@@ -1,5 +1,5 @@
-@use '../base/variables' as *;
-@use '../base/mixins' as *;
+@use '../base/base' as *;
+@use '../base/common' as *;
 
 #footer {
     @include flex-direction(row);

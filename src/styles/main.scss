@@ -1,17 +1,6 @@
 // base
-@use 'base/mixins' as *;
-@use 'base/typography' as *;
-@use 'base/variables' as *;
-
-// components
-@use 'components/button';
-@use 'components/card';
-@use 'components/footer';
-@use 'components/navbar';
-@use 'components/hero-section';
-@use 'components/testimonials';
-@use 'components/contact-form';
-@use 'components/animated-section';
+@use 'base/base';
+@use 'base/common';
 
 // layouts
 @use 'layouts/default';

@@ -1,6 +1,5 @@
-@use '../base/variables' as *;
-@use '../base/mixins' as *;
-@use '../base/typography' as *;
+@use '../base/base' as *;
+@use '../base/common' as *;
 
 
 #subscription-model {
@@ -13,26 +12,6 @@
         @include flex-direction(row);
         @include grid-pos(2, 8, 1,6);
         margin: 0 2rem;
-        .subscription-card {
-            padding: 1rem;
-            ul {
-                list-style: none;
-                li {
-                    margin: 0.5rem 0;
-                }
-            } .price-tag, .subscribe-btn {
-                margin: 1rem 0;
-            } &.basic {
-                background-color: rgba($color: $black, $alpha: 0.4);
-                color: $white;
-            } &.pro {
-                background-color: rgba($color: $primary-red, $alpha: 0.7);
-                color: $white;
-            } &.elite {
-                background-color: $black;
-                color: $white;
-            }
-        }
     }
 }
 

@@ -2,8 +2,6 @@
 import { motion } from 'framer-motion';
 // components
 import AnimatedVideo from './AnimatedVideo.jsx';
-// styles
-import '../../styles/components/_animated-section.scss';
 
 export default function AnimatedSection() {
     return (

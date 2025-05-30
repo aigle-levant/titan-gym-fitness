@@ -1,6 +1,13 @@
-@use '../base/variables' as *;
-@use '../base/mixins' as *;
-@use '../base/typography' as *;
+@use '../base/base' as *;
+// common
+@use '../base/common' as *;
+// components
+@use '../components/hero-section';
+@use '../components/animated-section';
+@use '../components/final-cta';
+@use '../components/subscription-model';
+@use '../components/trainers-list';
+@use '../components/testimonials';
 
 :root {
     background-color: $white;

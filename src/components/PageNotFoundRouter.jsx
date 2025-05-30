@@ -1,6 +1,3 @@
-// styles
-import '../styles/components/_not-found.scss'
-
 export default function PageNotFoundRouter() {
     return (
         <div id="not-found">

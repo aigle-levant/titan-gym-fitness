@@ -1,6 +1,4 @@
-@use '../base/variables' as *;
-@use '../base/mixins' as *;
-@use '../base/typography' as *;
+@use '../base/base' as *;
 
 .services-btn, .go-back-btn {
     background-color: $primary-red;
@@ -17,4 +15,15 @@
     color: $black;
     padding: 0.5rem 2rem;
     border: none;
+}
+
+.form-btn {
+    background-color: $primary-red;
+    border: 1px solid $primary-red;
+    color: $white;
+    &:hover, &:focus {
+        background-color: $white;
+        color: $primary-red;
+        border: 3px solid $primary-red;
+    }
 }

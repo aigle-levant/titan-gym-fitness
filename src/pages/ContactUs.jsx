@@ -2,7 +2,7 @@
 import MiscContactInfo from '../components/contact/MiscContactInfo.jsx';
 import Form from '../components/contact/Form.jsx';
 // styles
-import '../styles/components/_contact-form.scss';
+import '../styles/pages/_contact.scss';
 
 export default function ContactUs() {
     return (

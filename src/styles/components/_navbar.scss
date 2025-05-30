@@ -1,7 +1,5 @@
-@use '../base/variables' as *;
-@use '../base/mixins' as *;
-@use '../base/typography' as *;
-@use '../components/button' as *;
+@use '../base/base' as *;
+@use '../base/common' as *;
 
 #nav-bar {
     background-color: $white;

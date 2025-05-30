@@ -8,6 +8,8 @@ import TrainersList from "../components/home/TrainersList.jsx";
 import SubscriptionList from "../components/home/SubscriptionList.jsx";
 import Testimonials from '../components/home/Testimonials.jsx';
 import FinalCTA from '../components/home/FinalCTA.jsx';
+// styles
+import '../styles/pages/_home.scss';
 
 export default function Home () {
     return (

@@ -1,7 +1,5 @@
 // components
 import { TestimonialCard } from "../Card";
-// styles
-import '../../styles/components/_testimonials.scss';
 
 export default function Testimonials() {
     return (

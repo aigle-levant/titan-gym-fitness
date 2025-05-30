@@ -1,4 +1,3 @@
-// nothing to import
 
 export default function Quote() {
     return (

@@ -1,8 +1,5 @@
 // components
 import { SubscriptionCard } from '../Card.jsx';
-// styles
-import '../../styles/components/_subscription-model.scss';
-import '../../styles/components/_button.scss';
 
 export default function SubscriptionList() {
     const subscriptions = [

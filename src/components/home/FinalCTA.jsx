@@ -1,6 +1,3 @@
-// styles
-import '../../styles/components/_button.scss';
-import '../../styles/components/_final-cta.scss';
 
 export default function FinalCTA() {
     return (

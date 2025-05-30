@@ -1,9 +1,27 @@
-@use '../base/variables' as *;
-@use '../base/mixins' as *;
-@use '../base/typography' as *;
+@use '../base/base' as *;
+@use '../base/common' as *;
 
-#contact-us {
+#contact-form, .form {
     @include flex-direction(column);
+} #contact-form {
     justify-content: center;
     align-items: center;
+    margin: 2rem;
+    .small {
+        margin: 2rem 0;
+    }
+    .form {
+        input {
+            margin: 0.5rem 0;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: none;
+        }
+    }
+    .other-way {
+        margin-top: 3rem;
+        .big {
+            margin-bottom: 2rem;
+        }
+    }
 }

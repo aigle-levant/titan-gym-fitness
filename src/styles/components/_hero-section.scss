@@ -1,7 +1,5 @@
-@use '../base/variables' as *;
-@use '../base/mixins' as *;
-@use '../base/typography' as *;
-@use './button';
+@use '../base/base' as *;
+@use '../base/common' as *;
 
 #hero {
     padding: 5rem 1rem;

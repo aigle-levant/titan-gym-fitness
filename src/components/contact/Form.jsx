@@ -13,7 +13,7 @@ export default function Form() {
             <input type="tel" placeholder="Phone" {...register} />
             <textarea {...register} />
 
-            <input type="submit" />
+            <input type="submit" className='btn form-btn'/>
         </form>
     );
 }

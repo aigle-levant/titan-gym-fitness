@@ -1,7 +1,7 @@
 
 export default function MiscContactInfo() {
     return (
-        <>
+        <div className="other-way">
             <h2 className="big">Other ways to contact us</h2>
             <div className="contact-left">
                 <h3 className="medium">Address</h3>
@@ -17,6 +17,6 @@ export default function MiscContactInfo() {
                 <h3 className="medium">Email</h3>
                 <p className="small">support@titanfitness.org</p>
             </div>
-        </>
+        </div>
     )
 }
