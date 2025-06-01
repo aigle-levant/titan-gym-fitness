@@ -1,0 +1,31 @@
+@use '../base/base' as *;
+@use '../base/common' as *;
+
+.metrics {
+    @include grid(repeat(2,1fr), repeat(3,1fr));
+    padding: 2rem;
+    margin: 1rem 0;
+    .gym-metric, .diversity-metric, .recog-metric {
+        background-color: $black;
+        color: $white;
+        padding: 2rem;
+    } .players-metric, .service-metric {
+        background-color: $white;
+        color: $black;
+        padding: 2rem;
+    } .diversity-metric {
+        @include grid-pos(null, null, 2,4);
+        text-align: center;
+    }
+}
+
+@media (max-width: 1023px) {
+    .metrics {
+        @include grid(repeat(3,1fr), repeat(2,1fr));
+        padding: 1rem;
+        margin: 1rem 0;
+        .diversity-metric {
+            @include grid-pos(3, null, 1,3);
+        }
+    }
+}
