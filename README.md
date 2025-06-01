@@ -60,6 +60,9 @@ git remote set-url origin aigle-levant/titan-gym-fitness
 Any queries? Go for the following links.
 
 Twitter [now known as X] - [@aiglelevant](https://x.com/aiglelevant)
+
 LinkedIn - [Prajanya Subramanian](https://www.linkedin.com/in/prajanya-subramanian/)
+
 GitHub [you're here!] - [@aigle-levant](https://github.com/aigle-levant)
+
 Email - [aiglelevant@gmail.com](mailto:aiglelevant@gmail.com)
