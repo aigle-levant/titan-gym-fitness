@@ -1,0 +1,14 @@
+@use '../base/base' as *;
+@use '../base/common' as *;
+
+.service-trainer {
+    text-align: center;
+    margin: 1rem;
+    .small {
+        margin-bottom: 2rem;
+    } .slide {
+    background-color: $black;
+    color: $white;
+    padding: 1rem;
+}
+}

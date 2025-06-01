@@ -1,0 +1,9 @@
+@use '../base/base' as *;
+// common
+@use '../base/common' as *;
+// components
+@use '../components/workout';
+@use '../components/trainer';
+@use '../components/subscription-model';
+@use '../components/accordion';
+@use '../components/hero-section';
